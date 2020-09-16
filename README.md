@@ -1,4 +1,4 @@
-# Justintime50 Homebrew Tap
+# Justintime50's Homebrew Tap
 
 My personal Homebrew tap housing formulas for all my Homebrew projects.
 
@@ -8,6 +8,7 @@ My personal Homebrew tap housing formulas for all my Homebrew projects.
 ## Install
 
 ```bash
+# Install dev dependencies
 bundle install
 ```
 
@@ -15,7 +16,7 @@ bundle install
 
 ```bash
 # Setup tap
-brew tap justintime50/justintime50
+brew tap justintime50/formulas
 
 # Install a formula from the list
 brew install brew_update
