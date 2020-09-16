@@ -21,6 +21,7 @@ brew tap justintime50/formulas
 # Install a formula from the list
 brew install brew_update
 brew install brew_backup
+brew install burn_notice
 ```
 
 ## Development
