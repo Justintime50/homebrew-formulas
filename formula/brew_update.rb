@@ -6,7 +6,7 @@ class BrewUpdate < Formula
   homepage 'https://github.com/Justintime50/brew-update'
   url 'https://github.com/Justintime50/brew-update/archive/v1.0.0.tar.gz'
   version 'v1.0.0'
-  sha256 'a97ba967ba63870c78016fae0e275534aa48bb993e1b0b1f0d623f59f02dfa8d'
+  sha256 '30d970551fab3a30a1dccbb93fae77169803909b9301e4fb1511c69c769fddb9'
 
   bottle :unneeded
 
