@@ -6,11 +6,11 @@ class BrewUpdate < Formula
   homepage 'https://github.com/Justintime50/brew-update'
   url 'https://github.com/Justintime50/brew-update/archive/v1.1.0.tar.gz'
   version 'v1.1.0'
-  sha256 'a3ae81b75c58b1276ecebfe1f567474cdb091907c38be1badf35a464f471e5e1'
+  sha256 '7d5020f32ba499e51f2bffe44a087c1d56978274b366b9318674799670583b5c'
 
   bottle :unneeded
 
   def install
-    bin.install 'brew-update.sh' => 'brew-update'
+    bin.install 'src/brew-update.sh' => 'brew-update'
   end
 end
