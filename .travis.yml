@@ -5,7 +5,10 @@ ruby:
     - 2.6
     - 2.7
 
-install: bundle install
+install: 
+    - bundle install
+    - brew install --build-from-source formula/fibonacci_sequence.rb
 
 script:
     - rubocop
+    - brew test formula/fibonacci_sequence.rb
