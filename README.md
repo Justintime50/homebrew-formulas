@@ -16,6 +16,7 @@ brew install brew_update
 brew install brew_backup
 brew install burn_notice
 brew install easypost_cli
+brew install fibonacci_sequence
 ```
 
 ## Development
