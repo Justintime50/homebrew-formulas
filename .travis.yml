@@ -1,5 +1,3 @@
-os: osx
-
 language: ruby
 
 ruby:
@@ -9,8 +7,8 @@ ruby:
 
 install: 
     - bundle install
-    - brew install --build-from-source formula/fibonacci_sequence.rb
+    # - brew install --build-from-source formula/fibonacci_sequence.rb
 
 script:
     - rubocop
-    - brew test formula/fibonacci_sequence.rb
+    # - brew test formula/fibonacci_sequence.rb
