@@ -11,12 +11,8 @@ My personal Homebrew tap housing formulas for all my Homebrew projects.
 # Setup tap
 brew tap justintime50/formulas
 
-# Install a formula from the list
-brew install brew_update
-brew install brew_backup
-brew install burn_notice
-brew install easypost_cli
-brew install fibonacci_sequence
+# Check the tap for available formulas
+brew search justintime50/formulas
 ```
 
 ## Development
@@ -27,11 +23,13 @@ bundle install
 
 # Lint the project
 rubocop
-```
 
-### Working with Archives
+# Test a formula
+brew test <formula_name>
 
-```bash
+# Audit a formula
+brew audit --new-formula <formula_name>
+
 # Create a tar
 tar -czf name-of-tar.tgz path/to/content
 

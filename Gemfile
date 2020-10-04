@@ -3,4 +3,4 @@
 source 'https://rubygems.org'
 
 gem 'rubocop', require: false
-gem 'rubocop-ast'
+gem 'rubocop-ast', require: false

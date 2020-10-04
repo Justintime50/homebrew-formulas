@@ -10,6 +10,10 @@ class BrewUpdate < Formula
 
   bottle :unneeded
 
+  test do
+    # TODO: Write test
+  end
+
   def install
     bin.install 'src/brew-update.sh' => 'brew-update'
   end

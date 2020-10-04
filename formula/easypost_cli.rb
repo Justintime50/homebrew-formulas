@@ -10,6 +10,10 @@ class EasypostCli < Formula
 
   bottle :unneeded
 
+  test do
+    # TODO: Write test
+  end
+
   def install
     bin.install 'dist/unix_ep.sh' => 'ep'
   end

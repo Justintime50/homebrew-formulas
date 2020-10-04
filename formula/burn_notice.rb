@@ -10,6 +10,10 @@ class BurnNotice < Formula
 
   bottle :unneeded
 
+  test do
+    # TODO: Write test
+  end
+
   def install
     bin.install 'src/burn-notice.sh' => 'burn-notice'
   end

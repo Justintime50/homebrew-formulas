@@ -10,6 +10,10 @@ class BrewBackup < Formula
 
   bottle :unneeded
 
+  test do
+    # TODO: Write test
+  end
+
   def install
     bin.install 'src/brew-backup.sh' => 'brew-backup'
   end
