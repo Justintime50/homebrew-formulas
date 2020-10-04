@@ -5,5 +5,5 @@ install:
     - brew install fibonacci-sequence
 
 script:
-    - brew audit fibonacci-sequence test
+    - brew audit fibonacci-sequence
     - brew test fibonacci-sequence
