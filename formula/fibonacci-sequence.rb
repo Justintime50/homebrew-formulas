@@ -5,7 +5,6 @@ class FibonacciSequence < Formula
   desc "Print the Fibonacci Sequence to the CLI"
   homepage "https://github.com/Justintime50/fibonacci-sequence"
   url "https://github.com/Justintime50/fibonacci-sequence/archive/v1.0.1.tar.gz"
-  version "1.0.1"
   sha256 "8c9d76f640566854b57e82053046a208b0f690663286f07a2b54420d7f425727"
   bottle :unneeded
 

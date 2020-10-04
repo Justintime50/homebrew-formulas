@@ -2,8 +2,20 @@ os: osx
 
 install: 
     - brew tap justintime50/formulas
+    - brew install brew-backup
+    - brew install brew-update
+    - brew install burn-notice
+    - brew install easypost-cli
     - brew install fibonacci-sequence
 
 script:
+    - brew audit brew-backup
+    # - brew test brew-backup
+    - brew audit brew-update
+    # - brew test brew-update
+    - brew audit burn-notice
+    # - brew test burn-notice
+    - brew audit easypost-cli
+    # - brew test easypost-cli
     - brew audit fibonacci-sequence
     - brew test fibonacci-sequence
