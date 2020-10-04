@@ -1,12 +1,9 @@
-language: ruby
-
-ruby:
-    - 2.5
-    - 2.6
-    - 2.7
+os: osx
 
 install: 
-    - bundle install
+    - brew tap justintime50/formulas
+    - brew install fibonacci-sequence
 
 script:
-    - rubocop
+    - brew audit fibonacci-sequence test
+    - brew test fibonacci-sequence

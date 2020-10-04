@@ -17,13 +17,9 @@ brew search justintime50/formulas
 
 ## Development
 
+`Homebrew` goes directly against `Rubocop` and therefore, Rubocop is not used here. Instead we use the built-in brew audits and tests.
+
 ```bash
-# Install dev dependencies
-bundle install
-
-# Lint the project
-rubocop
-
 # Test a formula
 brew test <formula_name>
 
