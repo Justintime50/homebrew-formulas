@@ -5,8 +5,8 @@
 class Onepass < Formula
   desc "1password cli wrapper for easy credential retrieval"
   homepage "https://github.com/Justintime50/onepass"
-  url "https://github.com/Justintime50/onepass/archive/v0.1.1.tar.gz"
-  sha256 "ac7b8db6c9375ac42c05f6c8c4e30e4fb73b770f0fb619d490cd5e050ece2282"
+  url "https://github.com/Justintime50/onepass/archive/v0.2.0.tar.gz"
+  sha256 "99805de81e9452f9327cd61c74bdc15e871d694f37a3303f164840041ab05ad3"
   license "MIT"
   bottle :unneeded
 
