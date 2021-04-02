@@ -25,7 +25,7 @@ brew search justintime50/formulas
 
 | Project                                                                      | Install Command                     |
 | ---------------------------------------------------------------------------- | ----------------------------------- |
-| [1pass](http://github.com/Justintime50/1pass)                                | `brew install 1pass`                |
+| [onepass](http://github.com/Justintime50/onepass)                            | `brew install onepass`              |
 | [alchemist](https://github.com/Justintime50/alchemist)                       | `brew install alchemist`            |
 | [burn-notice](https://github.com/Justintime50/burn-notice)                   | `brew install burn-notice`          |
 | [easypost-cli](https://github.com/Justintime50/easypost-cli)                 | `brew install easypost-cli`         |
