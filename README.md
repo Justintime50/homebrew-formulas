@@ -24,14 +24,14 @@ brew search justintime50/formulas
 ```
 
 <!-- project_table_start -->
-| Project                                                                      | Install Command                     |
-| ---------------------------------------------------------------------------- | ----------------------------------- |
-| [onepass](http://github.com/Justintime50/onepass)                            | `brew install onepass`              |
-| [alchemist](https://github.com/Justintime50/alchemist)                       | `brew install alchemist`            |
-| [burn-notice](https://github.com/Justintime50/burn-notice)                   | `brew install burn-notice`          |
-| [easypost-cli](https://github.com/Justintime50/easypost-cli)                 | `brew install easypost-cli`         |
-| [freedom](https://github.com/Justintime50/freedom)                           | `brew install freedom`              |
-| [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | `brew install secure-browser-kiosk` |
+| Project                                                                      | Description                                                            | Installation                        |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ----------------------------------- |
+| [alchemist](https://github.com/Justintime50/alchemist)                       | Update, backup, and administer your Homebrew or Chocolatey instances   | `brew install alchemist`            |
+| [burn-notice](https://github.com/Justintime50/burn-notice)                   | Returning a machine to it, got let go, or got burned? delete your data | `brew install burn-notice`          |
+| [easypost-cli](https://github.com/Justintime50/easypost-cli)                 | Easypost api on the cli                                                | `brew install easypost-cli`         |
+| [freedom](https://github.com/Justintime50/freedom)                           | Give your computer the freedom to do more                              | `brew install freedom`              |
+| [onepass](https://github.com/Justintime50/onepass)                           | 1password cli wrapper for easy credential retrieval                    | `brew install onepass`              |
+| [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | Restart Chrome in incognito mode by prompting the user if              | `brew install secure-browser-kiosk` |
 <!-- project_table_end -->
 
 ## Development
