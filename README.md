@@ -23,6 +23,7 @@ brew tap justintime50/formulas
 brew search justintime50/formulas
 ```
 
+<!-- project_table_start -->
 | Project                                                                      | Install Command                     |
 | ---------------------------------------------------------------------------- | ----------------------------------- |
 | [onepass](http://github.com/Justintime50/onepass)                            | `brew install onepass`              |
@@ -31,6 +32,7 @@ brew search justintime50/formulas
 | [easypost-cli](https://github.com/Justintime50/easypost-cli)                 | `brew install easypost-cli`         |
 | [freedom](https://github.com/Justintime50/freedom)                           | `brew install freedom`              |
 | [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | `brew install secure-browser-kiosk` |
+<!-- project_table_end -->
 
 ## Development
 
