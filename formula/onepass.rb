@@ -11,6 +11,6 @@ class Onepass < Formula
   bottle :unneeded
 
   def install
-    bin.install "src/onepass.sh" => "onepass"
+    'bin.install "src/onepass.sh" => "onepass"'
   end
 end
