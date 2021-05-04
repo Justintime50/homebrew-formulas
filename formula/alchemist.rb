@@ -5,24 +5,24 @@
 class Alchemist < Formula
   desc "Update, backup, and administer your Homebrew or Chocolatey instances"
   homepage "https://github.com/Justintime50/alchemist"
-  version "2.2.1"
+  version "3.0.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Justintime50/alchemist/releases/download/v2.2.1/alchemist_2.2.1_darwin_amd64.tar.gz"
-    sha256 "7295da49ad3c43664b595379665c6bc9ac75dfaa9f12992eccf3ead474b36f71"
+    url "https://github.com/Justintime50/alchemist/releases/download/v3.0.0/alchemist_3.0.0_darwin_amd64.tar.gz"
+    sha256 "0550b9c925f481e50e92603a7b73ff99a6fa5e88e2b60b70e18a0db2ab20c07c"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Justintime50/alchemist/releases/download/v2.2.1/alchemist_2.2.1_darwin_arm64.tar.gz"
-    sha256 "be2896a238bf9ab928e8963fe0031a6536e6d0b92c0d3a84389d381dca45588b"
+    url "https://github.com/Justintime50/alchemist/releases/download/v3.0.0/alchemist_3.0.0_darwin_arm64.tar.gz"
+    sha256 "8f9b4f55cb0bbf42047d0f0a19e175f3cdc06584a9ef5051ac37a70d3fdc956b"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Justintime50/alchemist/releases/download/v2.2.1/alchemist_2.2.1_linux_amd64.tar.gz"
-    sha256 "83dab53a41413e1125cefb04271be1a7f6e87197129cfd959db119706eb97a74"
+    url "https://github.com/Justintime50/alchemist/releases/download/v3.0.0/alchemist_3.0.0_linux_amd64.tar.gz"
+    sha256 "108e08ca3b9509398d789dbdf165482a6a692bf1325686cb0aa3678b93905522"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/Justintime50/alchemist/releases/download/v2.2.1/alchemist_2.2.1_linux_arm64.tar.gz"
-    sha256 "ba7d60369b61c2724be43b5bf27365c0422bc5c7bd4f6a4c8d7c1d8ca4d8796d"
+    url "https://github.com/Justintime50/alchemist/releases/download/v3.0.0/alchemist_3.0.0_linux_arm64.tar.gz"
+    sha256 "9fd9beefc0bbe343e848bae174e027243dd01778a7a69a3eb16a908facd42d08"
   end
 
   def install
