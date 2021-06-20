@@ -5,8 +5,8 @@
 class BurnNotice < Formula
   desc "Returning a machine to it, got let go, or got burned? delete your data"
   homepage "https://github.com/Justintime50/burn-notice"
-  url "https://github.com/Justintime50/burn-notice/archive/v1.1.1.tar.gz"
-  sha256 "49cadfa146ebe7c77ec6316139bd4a25dadff7cf32b4c52af12f8e027467155a"
+  url "https://github.com/Justintime50/burn-notice/archive/v1.1.2.tar.gz"
+  sha256 "f0c228de12ae0940ef017de2d61e5b45805ecfa9d296ca326ab70521a90d36fc"
   license "MIT"
   bottle :unneeded
 
