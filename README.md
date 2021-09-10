@@ -25,6 +25,7 @@ brew search justintime50/formulas
 
 <!-- project_table_start -->
 | Project                                                                      | Description                                                            | Install                             |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ----------------------------------- |
 | [alchemist](https://github.com/Justintime50/alchemist)                       | Update, backup, and administer your Homebrew or Chocolatey instances   | `brew install alchemist`            |
 | [burn-notice](https://github.com/Justintime50/burn-notice)                   | Returning a machine to it, got let go, or got burned? delete your data | `brew install burn-notice`          |
 | [easypost-cli](https://github.com/Justintime50/easypost-cli)                 | Easypost api on the cli                                                | `brew install easypost-cli`         |
