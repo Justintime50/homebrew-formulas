@@ -11,19 +11,19 @@ jobs:
       - name: Brew tap
         run: brew tap justintime50/formulas
       - name: brew install alchemist
-        run: brew install alchemist
+        run: brew install justintime50/formulas/alchemist
         if: always()
       - name: brew install burn-notice
-        run: brew install burn-notice
+        run: brew install justintime50/formulas/burn-notice
         if: always()
       - name: brew install easypost-cli
-        run: brew install easypost-cli
+        run: brew install justintime50/formulas/easypost-cli
         if: always()
-      - name: brew install freedom
-        run: brew install freedom
+      - name: brew install onepass
+        run: brew install justintime50/formulas/onepass
         if: always()
       - name: brew install secure-browser-kiosk
-        run: brew install secure-browser-kiosk
+        run: brew install justintime50/formulas/secure-browser-kiosk
         if: always()
   audit:
     runs-on: macos-latest
@@ -31,37 +31,17 @@ jobs:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: brew audit alchemist
-        run: brew audit alchemist
+        run: brew audit justintime50/formulas/alchemist
         if: always()
       - name: brew audit burn-notice
-        run: brew audit burn-notice
+        run: brew audit justintime50/formulas/burn-notice
         if: always()
       - name: brew audit easypost-cli
-        run: brew audit easypost-cli
+        run: brew audit justintime50/formulas/easypost-cli
         if: always()
-      - name: brew audit freedom
-        run: brew audit freedom
+      - name: brew audit onepass
+        run: brew audit justintime50/formulas/onepass
         if: always()
       - name: brew audit secure-browser-kiosk
-        run: brew audit secure-browser-kiosk
+        run: brew audit justintime50/formulas/secure-browser-kiosk
         if: always()
-  # test:
-  #   runs-on: macos-latest
-  #   steps:
-  #     - name: Set up Homebrew
-  #       uses: Homebrew/actions/setup-homebrew@master
-  #     - name: brew test alchemist
-  #       run: brew test alchemist
-  #       if: always()
-  #     - name: brew test burn-notice
-  #       run: brew test burn-notice
-  #       if: always()
-  #     - name: brew test easypost-cli
-  #       run: brew test easypost-cli
-  #       if: always()
-  #     - name: brew test freedom
-  #       run: brew test freedom
-  #       if: always()
-  #     - name: brew test secure-browser-kiosk
-  #       run: brew test secure-browser-kiosk
-  #       if: always()
