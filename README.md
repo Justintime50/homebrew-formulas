@@ -7,7 +7,7 @@ My personal Homebrew tap housing formulas for all my Homebrew projects.
 [![Build](https://github.com/Justintime50/homebrew-formulas/workflows/build/badge.svg)](https://github.com/Justintime50/homebrew-formulas/actions)
 [![Licence](https://img.shields.io/github/license/justintime50/homebrew-formulas)](LICENSE)
 
-<img src="assets/showcase.png" alt="Showcase">
+<img src="https://raw.githubusercontent.com/justintime50/assets/main/src/homebrew-formulas/showcase.png" alt="Showcase">
 
 </div>
 
