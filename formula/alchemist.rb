@@ -5,24 +5,29 @@
 class Alchemist < Formula
   desc "Update, backup, and administer your Homebrew or Chocolatey instances"
   homepage "https://github.com/Justintime50/alchemist"
-  version "3.0.0"
+  version "3.1.0"
   bottle :unneeded
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Justintime50/alchemist/releases/download/v3.0.0/alchemist_3.0.0_darwin_amd64.tar.gz"
-    sha256 "0550b9c925f481e50e92603a7b73ff99a6fa5e88e2b60b70e18a0db2ab20c07c"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/Justintime50/alchemist/releases/download/v3.1.0/alchemist_3.1.0_darwin_amd64.tar.gz"
+      sha256 "af16f4ee959ccb41b19715abde40d97536417f4355bc3d3c24ad588c48b62df5"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/Justintime50/alchemist/releases/download/v3.1.0/alchemist_3.1.0_darwin_arm64.tar.gz"
+      sha256 "58b5c82891b079b1d3d2d765a07ca6270e9eaa67f6a11aa4ecd6d3045cecdf6f"
+    end
   end
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Justintime50/alchemist/releases/download/v3.0.0/alchemist_3.0.0_darwin_arm64.tar.gz"
-    sha256 "8f9b4f55cb0bbf42047d0f0a19e175f3cdc06584a9ef5051ac37a70d3fdc956b"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Justintime50/alchemist/releases/download/v3.0.0/alchemist_3.0.0_linux_amd64.tar.gz"
-    sha256 "108e08ca3b9509398d789dbdf165482a6a692bf1325686cb0aa3678b93905522"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/Justintime50/alchemist/releases/download/v3.0.0/alchemist_3.0.0_linux_arm64.tar.gz"
-    sha256 "9fd9beefc0bbe343e848bae174e027243dd01778a7a69a3eb16a908facd42d08"
+
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/Justintime50/alchemist/releases/download/v3.1.0/alchemist_3.1.0_linux_amd64.tar.gz"
+      sha256 "b575d5b5d12ed70a5531e9e8c9c7ca4822c4bfeae2e3996109916342b71e55e4"
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/Justintime50/alchemist/releases/download/v3.1.0/alchemist_3.1.0_linux_arm64.tar.gz"
+      sha256 "a01077b7f0625d52bc04817336b5de419e24bac83a73ded2ef624df4804cb924"
+    end
   end
 
   def install
