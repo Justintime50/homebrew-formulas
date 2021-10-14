@@ -5,8 +5,8 @@
 class Srvinfra < Formula
   desc "Srvinfra is a tool to deploy and update services and websites on a server"
   homepage "https://github.com/Justintime50/srvinfra"
-  url "https://github.com/Justintime50/srvinfra/archive/v0.2.0.tar.gz"
-  sha256 "c747d99cfe6513a761de2fc03061efda7657df3e7fc8feb58b2596693cd18c05"
+  url "https://github.com/Justintime50/srvinfra/archive/v0.3.0.tar.gz"
+  sha256 "7bba2534c6f33afd5e9af0feb6f86db718e94d03cc361c896ea84befd418d553"
   license "MIT"
   bottle :unneeded
 
