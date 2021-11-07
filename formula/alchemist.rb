@@ -6,7 +6,6 @@ class Alchemist < Formula
   desc "Update, backup, and administer your Homebrew or Chocolatey instances"
   homepage "https://github.com/Justintime50/alchemist"
   version "3.1.0"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

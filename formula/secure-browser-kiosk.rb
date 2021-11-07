@@ -8,7 +8,6 @@ class SecureBrowserKiosk < Formula
   url "https://github.com/Justintime50/secure-browser-kiosk/archive/v1.1.1.tar.gz"
   sha256 "e3539bdec4019d3be7a5d2b3dd39c6fe84b093d024ee7b8998cfd02c17569368"
   license "MIT"
-  bottle :unneeded
 
   def install
     bin.install "src/secure-browser-kiosk.sh" => "secure-browser-kiosk"
