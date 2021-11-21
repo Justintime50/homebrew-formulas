@@ -5,31 +5,43 @@
 class Alchemist < Formula
   desc "Update, backup, and administer your Homebrew or Chocolatey instances"
   homepage "https://github.com/Justintime50/alchemist"
-  version "3.1.0"
+  version "3.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Justintime50/alchemist/releases/download/v3.1.0/alchemist_3.1.0_darwin_amd64.tar.gz"
-      sha256 "af16f4ee959ccb41b19715abde40d97536417f4355bc3d3c24ad588c48b62df5"
+      url "https://github.com/Justintime50/alchemist/releases/download/v3.1.1/alchemist_3.1.1_darwin_amd64.tar.gz"
+      sha256 "b54dfd4db49b10eb5a32aaacb97c84a67bc2022ed9f28bb76176e3c70dc8277d"
+
+      def install
+        bin.install "alchemist"
+      end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Justintime50/alchemist/releases/download/v3.1.0/alchemist_3.1.0_darwin_arm64.tar.gz"
-      sha256 "58b5c82891b079b1d3d2d765a07ca6270e9eaa67f6a11aa4ecd6d3045cecdf6f"
+      url "https://github.com/Justintime50/alchemist/releases/download/v3.1.1/alchemist_3.1.1_darwin_arm64.tar.gz"
+      sha256 "59c0977f4f7ff3ba33c58011ae26ace27efbc91d66ca03b4894324d1423343f6"
+
+      def install
+        bin.install "alchemist"
+      end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/Justintime50/alchemist/releases/download/v3.1.0/alchemist_3.1.0_linux_amd64.tar.gz"
-      sha256 "b575d5b5d12ed70a5531e9e8c9c7ca4822c4bfeae2e3996109916342b71e55e4"
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Justintime50/alchemist/releases/download/v3.1.0/alchemist_3.1.0_linux_arm64.tar.gz"
-      sha256 "a01077b7f0625d52bc04817336b5de419e24bac83a73ded2ef624df4804cb924"
-    end
-  end
+      url "https://github.com/Justintime50/alchemist/releases/download/v3.1.1/alchemist_3.1.1_linux_arm64.tar.gz"
+      sha256 "12430cb622826d9f80048e7bab118dd425437808998e93e6c756b6d534f6b0d3"
 
-  def install
-    bin.install "alchemist"
+      def install
+        bin.install "alchemist"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/Justintime50/alchemist/releases/download/v3.1.1/alchemist_3.1.1_linux_amd64.tar.gz"
+      sha256 "b497b625ffb4edad16e3a1b63e09640d749327f5909b5bbad3eba5400e0c52b5"
+
+      def install
+        bin.install "alchemist"
+      end
+    end
   end
 end
