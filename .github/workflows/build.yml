@@ -15,12 +15,12 @@ jobs:
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
-      - name: brew install all
-        run: brew install --formula /home/runner/work/homebrew-formulas/homebrew-formulas/formulas/*.rb
+      - name: brew install formula
+        run: brew install --formula /home/runner/work/homebrew-formulas/homebrew-formulas/formula/*.rb
   audit:
     runs-on: macos-latest
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
-      - name: brew audit all
-        run: brew audit --formula /home/runner/work/homebrew-formulas/homebrew-formulas/formulas/*.rb
+      - name: brew audit formula
+        run: brew audit --formula /home/runner/work/homebrew-formulas/homebrew-formulas/formula/*.rb
