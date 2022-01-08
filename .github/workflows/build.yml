@@ -13,6 +13,8 @@ jobs:
   install:
     runs-on: macos-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: brew install formula
@@ -20,6 +22,8 @@ jobs:
   audit:
     runs-on: macos-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: brew audit formula
