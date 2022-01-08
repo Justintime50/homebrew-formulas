@@ -3,45 +3,24 @@ name: build
 on: [push, pull_request]
 
 jobs:
-  install:
+  tap:
     runs-on: macos-latest
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: Brew tap
         run: brew tap justintime50/formulas
-      - name: brew install alchemist
-        run: brew install justintime50/formulas/alchemist
-        if: always()
-      - name: brew install burn-notice
-        run: brew install justintime50/formulas/burn-notice
-        if: always()
-      - name: brew install easypost-cli
-        run: brew install justintime50/formulas/easypost-cli
-        if: always()
-      - name: brew install onepass
-        run: brew install justintime50/formulas/onepass
-        if: always()
-      - name: brew install secure-browser-kiosk
-        run: brew install justintime50/formulas/secure-browser-kiosk
-        if: always()
+  install:
+    runs-on: macos-latest
+    steps:
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: brew install all
+        run: brew install --formula /home/runner/work/homebrew-formulas/homebrew-formulas/formulas/*.rb
   audit:
     runs-on: macos-latest
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
-      - name: brew audit alchemist
-        run: brew audit justintime50/formulas/alchemist
-        if: always()
-      - name: brew audit burn-notice
-        run: brew audit justintime50/formulas/burn-notice
-        if: always()
-      - name: brew audit easypost-cli
-        run: brew audit justintime50/formulas/easypost-cli
-        if: always()
-      - name: brew audit onepass
-        run: brew audit justintime50/formulas/onepass
-        if: always()
-      - name: brew audit secure-browser-kiosk
-        run: brew audit justintime50/formulas/secure-browser-kiosk
-        if: always()
+      - name: brew audit all
+        run: brew audit --formula /home/runner/work/homebrew-formulas/homebrew-formulas/formulas/*.rb
