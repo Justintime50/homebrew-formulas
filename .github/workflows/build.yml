@@ -1,6 +1,10 @@
 name: build
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 1 * * *"
 
 jobs:
   tap:
@@ -28,3 +32,8 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@master
       - name: brew audit formula
         run: brew audit --formula /Users/runner/work/homebrew-formulas/homebrew-formulas/formula/*.rb
+      - name: Workflow keepalive
+        uses: gautamkrishnar/keepalive-workflow@master # Creates a dummy commit when the workflow is stale to keep it from being disabled
+        with:
+          committer_username: Justintime50
+          committer_email: 39606064+Justintime50@users.noreply.github.com
