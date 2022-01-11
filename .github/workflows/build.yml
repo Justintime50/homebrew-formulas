@@ -1,47 +1,39 @@
 name: build
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 1 * * *"
 
 jobs:
-  install:
+  tap:
     runs-on: macos-latest
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: Brew tap
         run: brew tap justintime50/formulas
-      - name: brew install alchemist
-        run: brew install justintime50/formulas/alchemist
-        if: always()
-      - name: brew install burn-notice
-        run: brew install justintime50/formulas/burn-notice
-        if: always()
-      - name: brew install easypost-cli
-        run: brew install justintime50/formulas/easypost-cli
-        if: always()
-      - name: brew install onepass
-        run: brew install justintime50/formulas/onepass
-        if: always()
-      - name: brew install secure-browser-kiosk
-        run: brew install justintime50/formulas/secure-browser-kiosk
-        if: always()
+  install:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: brew install formula
+        run: brew install --formula /Users/runner/work/homebrew-formulas/homebrew-formulas/formula/*.rb
   audit:
     runs-on: macos-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
-      - name: brew audit alchemist
-        run: brew audit justintime50/formulas/alchemist
-        if: always()
-      - name: brew audit burn-notice
-        run: brew audit justintime50/formulas/burn-notice
-        if: always()
-      - name: brew audit easypost-cli
-        run: brew audit justintime50/formulas/easypost-cli
-        if: always()
-      - name: brew audit onepass
-        run: brew audit justintime50/formulas/onepass
-        if: always()
-      - name: brew audit secure-browser-kiosk
-        run: brew audit justintime50/formulas/secure-browser-kiosk
-        if: always()
+      - name: brew audit formula
+        run: brew audit --formula /Users/runner/work/homebrew-formulas/homebrew-formulas/formula/*.rb
+      - name: Workflow keepalive
+        uses: gautamkrishnar/keepalive-workflow@master # Creates a dummy commit when the workflow is stale to keep it from being disabled
+        with:
+          committer_username: Justintime50
+          committer_email: 39606064+Justintime50@users.noreply.github.com
