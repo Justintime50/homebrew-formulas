@@ -5,8 +5,8 @@
 class Clienv < Formula
   desc "Source your environment variables from env when running cli commands"
   homepage "https://github.com/Justintime50/clienv"
-  url "https://github.com/Justintime50/clienv/archive/v0.2.0.tar.gz"
-  sha256 "dc9426e748205af86c69886598e7e29d83463bd82d1ac566728f9f77ac6a5991"
+  url "https://github.com/Justintime50/clienv/archive/v0.2.1.tar.gz"
+  sha256 "40e376aa0b82c222e4b605adf730c220017ef66fa611ea37de91b7d22a05a1bc"
   license "MIT"
 
   def install
