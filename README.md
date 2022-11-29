@@ -11,7 +11,9 @@ My personal Homebrew tap housing formulas for all my Homebrew projects.
 
 </div>
 
-[Homebrew](https://brew.sh) is a fantastic package manager for macOS and Linux. I release some of my projects via Homebrew as it is widely used and easy to deploy to. This tap is a "self hosted" collection of Homebrew packages. For specific details about a formula contained in this tap, visit that formula's homepage.
+[Homebrew](https://brew.sh) is a fantastic package manager for macOS and Linux. I release some of my projects via Homebrew as it is widely used and easy to deploy to. This tap is a "self hosted" collection of Homebrew packages. For specific details about a formula contained in this tap, visit that formula's homepage or see the table below.
+
+This repos is completely automated and maintained via [Homebrew Releaser](https://github.com/Justintime50/homebrew-releaser). If you are looking for a way to publish your own Homebrew formula on your behalf, you should check it out!
 
 ## Usage
 
@@ -34,7 +36,9 @@ brew search justintime50/formulas
 | [onepass](https://github.com/Justintime50/onepass)                           | 1password cli wrapper for easy credential retrieval                              | `brew install onepass`              |
 | [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | Restart Chrome in incognito mode by prompting the user if                        | `brew install secure-browser-kiosk` |
 | [srvinfra](https://github.com/Justintime50/srvinfra)                         | Srvinfra is a tool to deploy, update, and maintain services and websites on a se | `brew install srvinfra`             |
-<!-- project_table_end -->## Development
+<!-- project_table_end -->
+
+## Development
 
 ```bash
 # Audit a formula (lint)
