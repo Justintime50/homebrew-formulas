@@ -18,7 +18,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: brew install formula
@@ -27,7 +27,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: brew audit formula
