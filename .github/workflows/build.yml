@@ -4,7 +4,7 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: "0 1 * * *"
+    - cron: '0 1 * * *'
 
 jobs:
   tap:
@@ -22,7 +22,7 @@ jobs:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: brew install formula
-        run: brew install --formula /Users/runner/work/homebrew-formulas/homebrew-formulas/formula/*.rb
+        run: brew install --formula $(pwd)/formula/*.rb
   audit:
     runs-on: macos-latest
     steps:

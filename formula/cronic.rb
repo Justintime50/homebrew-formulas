@@ -1,4 +1,4 @@
-# typed: false
+# typed: true
 # frozen_string_literal: true
 
 # This formula was manually created and simply packages up a 3rd party shell script for easier distribution.
