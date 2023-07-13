@@ -10,30 +10,22 @@ jobs:
   tap:
     runs-on: macos-latest
     steps:
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-      - name: Brew tap
-        run: brew tap justintime50/formulas
+      - uses: Homebrew/actions/setup-homebrew@master
+      - run: brew tap justintime50/formulas
   install:
     runs-on: macos-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-      - name: brew install formula
-        run: brew install --formula $(pwd)/formula/*.rb
+      - uses: actions/checkout@v3
+      - uses: Homebrew/actions/setup-homebrew@master
+      - run: brew install --formula $(pwd)/formula/*.rb
   audit:
     runs-on: macos-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-      - name: brew audit formula
-        run: brew audit --formula /Users/runner/work/homebrew-formulas/homebrew-formulas/formula/*.rb
-      - name: Workflow keepalive
-        uses: gautamkrishnar/keepalive-workflow@master # Creates a dummy commit when the workflow is stale to keep it from being disabled
+      - uses: actions/checkout@v3
+      - uses: Homebrew/actions/setup-homebrew@master
+      - run: brew audit --tap justintime50/formulas
+      # Creates a dummy commit when the workflow is stale to keep it from being disabled
+      - uses: gautamkrishnar/keepalive-workflow@master
         with:
           committer_username: Justintime50
           committer_email: 39606064+Justintime50@users.noreply.github.com
