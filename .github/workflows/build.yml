@@ -15,13 +15,13 @@ jobs:
   install:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: Homebrew/actions/setup-homebrew@master
-      - run: brew install --formula $(pwd)/formula/*.rb
+      - run: brew install --formula $(pwd)/Formula/*.rb
   audit:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: Homebrew/actions/setup-homebrew@master
       - run: brew audit --tap justintime50/formulas
       # Creates a dummy commit when the workflow is stale to keep it from being disabled
