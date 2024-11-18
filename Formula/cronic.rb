@@ -5,8 +5,8 @@
 class Cronic < Formula
   desc "Cure for Cron's chronic email problem"
   homepage "https://github.com/justincase/cronic"
-  url "https://github.com/Justintime50/cronic/archive/v2.tar.gz"
-  sha256 "d625576815b11a408c1ae3ba7dd0d81923181728c15cc57f1ff134655c671511"
+  url "https://github.com/Justintime50/cronic/archive/v3.tar.gz"
+  sha256 "aed9d222c629e8bf16cef5be5744ee831340fa6b14a1a6fc45e8c8378553d85e"
   license "MIT"
 
   def install
