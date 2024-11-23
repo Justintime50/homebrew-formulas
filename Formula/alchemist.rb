@@ -5,20 +5,20 @@
 class Alchemist < Formula
   desc "Update, backup, and administer your Homebrew or Chocolatey instances"
   homepage "https://github.com/Justintime50/alchemist"
-  version "3.3.0"
+  version "3.3.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/Justintime50/alchemist/releases/download/v3.3.0/alchemist_3.3.0_darwin_amd64.tar.gz"
-      sha256 "ebb3c683a9eb465b6b181d236b1fb0e280a274e5eae7004fb25600f7dd6c037b"
+      url "https://github.com/Justintime50/alchemist/releases/download/v3.3.1/alchemist_3.3.1_darwin_amd64.tar.gz"
+      sha256 "7bb448d27a809868bd53a1f764de4af5622ab3467d2c184648d756d6ae569100"
 
       def install
         bin.install "alchemist"
       end
     end
     on_arm do
-      url "https://github.com/Justintime50/alchemist/releases/download/v3.3.0/alchemist_3.3.0_darwin_arm64.tar.gz"
-      sha256 "6ea7b115166cc260f03f10ee65bd99b0516f8aaa751e44abab45629d9448e958"
+      url "https://github.com/Justintime50/alchemist/releases/download/v3.3.1/alchemist_3.3.1_darwin_arm64.tar.gz"
+      sha256 "c6456d53699e95ef5ef64830908b814605fc85a262161ff1e4a639c3d81eb8d8"
 
       def install
         bin.install "alchemist"
@@ -29,8 +29,8 @@ class Alchemist < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Justintime50/alchemist/releases/download/v3.3.0/alchemist_3.3.0_linux_amd64.tar.gz"
-        sha256 "f07b1356f4f302ec1c9bee1e0594ad6a0adca1b8e7fa199f0070147683d2360c"
+        url "https://github.com/Justintime50/alchemist/releases/download/v3.3.1/alchemist_3.3.1_linux_amd64.tar.gz"
+        sha256 "05e994afc1d633f4126c485754c5e03a98ffe8ae66a21f9a861892c3ebfcffb2"
 
         def install
           bin.install "alchemist"
@@ -39,8 +39,8 @@ class Alchemist < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Justintime50/alchemist/releases/download/v3.3.0/alchemist_3.3.0_linux_arm64.tar.gz"
-        sha256 "c23638c809695762fa9d3f20b324a4709151515dcdf85065bd623d5c64dbb7be"
+        url "https://github.com/Justintime50/alchemist/releases/download/v3.3.1/alchemist_3.3.1_linux_arm64.tar.gz"
+        sha256 "cf36a9362e59a372cc2e9e05b1b1a09887a03a2bfb93444adc4f3b5ebffde01e"
 
         def install
           bin.install "alchemist"
