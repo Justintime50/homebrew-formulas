@@ -35,7 +35,6 @@ brew search justintime50/formulas
 | [easypost-cli](https://github.com/Justintime50/easypost-cli)                 | Easypost api on the cli                                                         | `brew install easypost-cli`         |
 | [onepass](https://github.com/Justintime50/onepass)                           | 1password cli wrapper for easy credential retrieval                             | `brew install onepass`              |
 | [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | Restart Chrome in incognito mode by prompting the user if                       | `brew install secure-browser-kiosk` |
-| [srvinfra](https://github.com/Justintime50/srvinfra)                         | Is a tool to deploy, update, and maintain services and websites on a se         | `brew install srvinfra`             |
 <!-- project_table_end -->
 
 ## Development
