@@ -5,20 +5,20 @@
 class Deckschrubber < Formula
   desc "Deckschrubber inspects images of a Docker Registry and removes those older than a given age"
   homepage "https://github.com/Justintime50/deckschrubber"
-  version "0.8.0"
+  version "0.8.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Justintime50/deckschrubber/releases/download/v0.8.0/deckschrubber_0.8.0_darwin_amd64.tar.gz"
-      sha256 "de63e3c3bf865aad1146193e13481b853d14ca9086b5dc1043a2ed42a73f8445"
+      url "https://github.com/Justintime50/deckschrubber/releases/download/v0.8.1/deckschrubber_0.8.1_darwin_amd64.tar.gz"
+      sha256 "22656d1d1a111f308b008608ab23edadb81ae58748fa455395fa639b77afa301"
 
       def install
         bin.install "deckschrubber"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Justintime50/deckschrubber/releases/download/v0.8.0/deckschrubber_0.8.0_darwin_arm64.tar.gz"
-      sha256 "780b0e3126007bd3e531e84cbc36b42bf6a77c04500f74af62ad264f99fb4d8b"
+      url "https://github.com/Justintime50/deckschrubber/releases/download/v0.8.1/deckschrubber_0.8.1_darwin_arm64.tar.gz"
+      sha256 "88db3dfe27b673f106693d149d4407e87d2bcbcc320378ecd7e146669389c437"
 
       def install
         bin.install "deckschrubber"
@@ -29,8 +29,8 @@ class Deckschrubber < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Justintime50/deckschrubber/releases/download/v0.8.0/deckschrubber_0.8.0_linux_amd64.tar.gz"
-        sha256 "4c5c6a0bd4c905cf2e06283ed27e281234dfbe829f552987f7b3fe50be152ff4"
+        url "https://github.com/Justintime50/deckschrubber/releases/download/v0.8.1/deckschrubber_0.8.1_linux_amd64.tar.gz"
+        sha256 "4d985d7f9826b519740fb88cbbd42454585cb04c9c5ddaf42bedbaadf14ed2a9"
 
         def install
           bin.install "deckschrubber"
@@ -39,8 +39,8 @@ class Deckschrubber < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Justintime50/deckschrubber/releases/download/v0.8.0/deckschrubber_0.8.0_linux_arm64.tar.gz"
-        sha256 "ba29cfae7768fa4ab14509836fa63ae598fcd55100cc7d7530c248a09d832a05"
+        url "https://github.com/Justintime50/deckschrubber/releases/download/v0.8.1/deckschrubber_0.8.1_linux_arm64.tar.gz"
+        sha256 "1d2081ee1eb57dca1bf733ffa679458a26dbc6160fca75f8b028098336bfcc2a"
 
         def install
           bin.install "deckschrubber"
