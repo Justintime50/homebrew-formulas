@@ -1,10 +1,6 @@
 name: build
 
-on:
-  push:
-  pull_request:
-  schedule:
-    - cron: '0 1 * * *'
+on: [push, pull_request]
 
 jobs:
   tap:
@@ -24,8 +20,3 @@ jobs:
       - uses: actions/checkout@v4
       - uses: Homebrew/actions/setup-homebrew@master
       - run: brew audit --tap justintime50/formulas
-      # Creates a dummy commit when the workflow is stale to keep it from being disabled
-      - uses: gautamkrishnar/keepalive-workflow@master
-        with:
-          committer_username: Justintime50
-          committer_email: 39606064+Justintime50@users.noreply.github.com
