@@ -26,15 +26,17 @@ brew search justintime50/formulas
 ```
 
 <!-- project_table_start -->
-| Project                                                                      | Description                                                                     | Install                             |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------- |
-| [alchemist](https://github.com/Justintime50/alchemist)                       | Update, backup, and administer your Homebrew or Chocolatey instances            | `brew install alchemist`            |
-| [burn-notice](https://github.com/Justintime50/burn-notice)                   | Returning a machine to it, got let go, or got burned? delete your data with one | `brew install burn-notice`          |
-| [clienv](https://github.com/Justintime50/clienv)                             | Source your environment variables from env when running cli commands            | `brew install clienv`               |
-| [cronic](https://github.com/justincase/cronic)                               | Cure for Cron's chronic email problem                                           | `brew install cronic`               |
-| [easypost-cli](https://github.com/Justintime50/easypost-cli)                 | Easypost api on the cli                                                         | `brew install easypost-cli`         |
-| [onepass](https://github.com/Justintime50/onepass)                           | 1password cli wrapper for easy credential retrieval                             | `brew install onepass`              |
-| [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | Restart Chrome in incognito mode by prompting the user if                       | `brew install secure-browser-kiosk` |
+| Project                                                                      | Description                                                                                 | Install                             |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------- |
+| [alchemist](https://github.com/Justintime50/alchemist)                       | Update, backup, and administer your Homebrew or Chocolatey instances                        | `brew install alchemist`            |
+| [burn-notice](https://github.com/Justintime50/burn-notice)                   | Returning a machine to it, got let go, or got burned? delete your data with one             | `brew install burn-notice`          |
+| [clienv](https://github.com/Justintime50/clienv)                             | Source your environment variables from env when running cli commands                        | `brew install clienv`               |
+| [cronic](https://github.com/justincase/cronic)                               | Cure for Cron's chronic email problem                                                       | `brew install cronic`               |
+| [deckschrubber](https://github.com/Justintime50/deckschrubber)               | Deckschrubber inspects images of a Docker Registry and removes those older than a given age | `brew install deckschrubber`        |
+| [easypost-cli](https://github.com/Justintime50/easypost-cli)                 | Easypost api on the cli                                                                     | `brew install easypost-cli`         |
+| [github-archive](https://github.com/Justintime50/github-archive)             | Powerful tool to concurrently clone, pull, or fork user and org repos and gist              | `brew install github-archive`       |
+| [onepass](https://github.com/Justintime50/onepass)                           | 1password cli wrapper for easy credential retrieval                                         | `brew install onepass`              |
+| [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | Restart Chrome in incognito mode by prompting the user if                                   | `brew install secure-browser-kiosk` |
 <!-- project_table_end -->
 
 ## Development
