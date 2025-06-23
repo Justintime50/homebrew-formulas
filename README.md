@@ -39,6 +39,7 @@ brew search justintime50/formulas
 | [pip-tree](https://github.com/Justintime50/pip-tree)                         | Get the dependency tree of your python virtual environment via pip                          | `brew install pip-tree`             |
 | [pullbug](https://github.com/Justintime50/pullbug)                           | Get bugged via discord or slack to merge your github pull requests or close open            | `brew install pullbug`              |
 | [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | Restart Chrome in incognito mode by prompting the user if                                   | `brew install secure-browser-kiosk` |
+| [vcrpy-bincon](https://github.com/Justintime50/vcrpy-bincon)                 | Convert binary python vcr cassette responses to human-readable strings                      | `brew install vcrpy-bincon`         |
 <!-- project_table_end -->
 
 ## Development
