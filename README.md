@@ -36,6 +36,7 @@ brew search justintime50/formulas
 | [easypost-cli](https://github.com/Justintime50/easypost-cli)                 | Easypost api on the cli                                                                     | `brew install easypost-cli`         |
 | [github-archive](https://github.com/Justintime50/github-archive)             | Powerful tool to concurrently clone, pull, or fork user and org repos and gist              | `brew install github-archive`       |
 | [onepass](https://github.com/Justintime50/onepass)                           | 1password cli wrapper for easy credential retrieval                                         | `brew install onepass`              |
+| [pip-tree](https://github.com/Justintime50/pip-tree)                         | Get the dependency tree of your python virtual environment via pip                          | `brew install pip-tree`             |
 | [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | Restart Chrome in incognito mode by prompting the user if                                   | `brew install secure-browser-kiosk` |
 <!-- project_table_end -->
 
