@@ -91,4 +91,8 @@ class GithubArchive < Formula
   def install
     virtualenv_install_with_resources
   end
+
+  test do
+    assert_match "github-archive #{version}", shell_output("#{bin}/github-archive --version")
+  end
 end
