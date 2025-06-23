@@ -37,6 +37,7 @@ brew search justintime50/formulas
 | [github-archive](https://github.com/Justintime50/github-archive)             | Powerful tool to concurrently clone, pull, or fork user and org repos and gist              | `brew install github-archive`       |
 | [onepass](https://github.com/Justintime50/onepass)                           | 1password cli wrapper for easy credential retrieval                                         | `brew install onepass`              |
 | [pip-tree](https://github.com/Justintime50/pip-tree)                         | Get the dependency tree of your python virtual environment via pip                          | `brew install pip-tree`             |
+| [pullbug](https://github.com/Justintime50/pullbug)                           | Get bugged via discord or slack to merge your github pull requests or close open            | `brew install pullbug`              |
 | [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | Restart Chrome in incognito mode by prompting the user if                                   | `brew install secure-browser-kiosk` |
 <!-- project_table_end -->
 
