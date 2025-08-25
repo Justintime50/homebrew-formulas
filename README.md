@@ -35,6 +35,7 @@ brew search justintime50/formulas
 | [deckschrubber](https://github.com/Justintime50/deckschrubber)               | Deckschrubber inspects images of a Docker Registry and removes those older than a given age | `brew install deckschrubber`        |
 | [easypost-cli](https://github.com/Justintime50/easypost-cli)                 | Easypost api on the cli                                                                     | `brew install easypost-cli`         |
 | [github-archive](https://github.com/Justintime50/github-archive)             | Powerful tool to concurrently clone, pull, or fork user and org repos and gist              | `brew install github-archive`       |
+| [muffinscript](https://github.com/Justintime50/muffinscript)                 | Delectable little programming language                                                      | `brew install muffinscript`         |
 | [onepass](https://github.com/Justintime50/onepass)                           | 1password cli wrapper for easy credential retrieval                                         | `brew install onepass`              |
 | [pip-tree](https://github.com/Justintime50/pip-tree)                         | Get the dependency tree of your python virtual environment via pip                          | `brew install pip-tree`             |
 | [pullbug](https://github.com/Justintime50/pullbug)                           | Get bugged via discord or slack to merge your github pull requests or close open            | `brew install pullbug`              |
