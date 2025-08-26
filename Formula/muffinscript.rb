@@ -10,7 +10,7 @@ class Muffinscript < Formula
   license "MIT"
 
   def install
-    bin.install "dist/muffin/muffin" => "muffin"
+    bin.install "muffin/muffin" => "muffin"
   end
 
   test do
