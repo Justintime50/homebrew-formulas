@@ -10,7 +10,8 @@ class Muffinscript < Formula
   license "MIT"
 
   def install
-    libexec.install Dir["dist/*"]
+    dist_dir = Dir["*/dist"].first || "dist"
+    libexec.install Dir["#{dist_dir}/*"]
     bin.install_symlink libexec/"muffin/muffin" => "muffin"
   end
 
