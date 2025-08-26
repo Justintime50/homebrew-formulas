@@ -6,7 +6,7 @@ class Muffinscript < Formula
   desc "Delectable little programming language"
   homepage "https://github.com/Justintime50/muffinscript"
   url "https://github.com/Justintime50/muffinscript/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "b940637818b2f4f1318c03e37c84929317ce2ec564d34f82a69aace056e838f5"
+  sha256 "ebe3bc0834836c92cbd0b3c3edc25b76e0d0a501a2fab892f62966a8826b0314"
   license "MIT"
 
   def install
