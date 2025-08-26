@@ -10,8 +10,7 @@ class Muffinscript < Formula
   license "MIT"
 
   def install
-    dist_dir = buildpath.glob("**/dist").first
-    raise "dist directory not found!" unless dist_dir
+    dist_dir = Dir[buildpath/"*/dist"].first || buildpath/"dist"
     libexec.install Dir["#{dist_dir}/*"]
     bin.install_symlink libexec/"muffin/muffin" => "muffin"
   end
