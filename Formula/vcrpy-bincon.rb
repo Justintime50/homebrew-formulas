@@ -7,20 +7,15 @@ class VcrpyBincon < Formula
 
   desc "Convert binary python vcr cassette responses to human-readable strings"
   homepage "https://github.com/Justintime50/vcrpy-bincon"
-  url "https://github.com/Justintime50/vcrpy-bincon/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "69cd95a98a30b8a669e85759504fc8a1033928efef2fedaff828e4e3e3e1bb32"
+  url "https://github.com/Justintime50/vcrpy-bincon/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "97845ead8d10f40c150d9d71eef2996aca320e256d849403e541148b925b654c"
   license "MIT"
 
-  depends_on "python@3.13"
+  depends_on "python@3.14"
 
   resource "ruamel-yaml" do
-    url "https://files.pythonhosted.org/packages/39/87/6da0df742a4684263261c253f00edd5829e6aca970fff69e75028cccc547/ruamel.yaml-0.18.14.tar.gz"
-    sha256 "7227b76aaec364df15936730efbf7d72b30c0b79b1d578bbb8e3dcb2d81f52b7"
-  end
-
-  resource "ruamel-yaml-clib" do
-    url "https://files.pythonhosted.org/packages/20/84/80203abff8ea4993a87d823a5f632e4d92831ef75d404c9fc78d0176d2b5/ruamel.yaml.clib-0.2.12.tar.gz"
-    sha256 "6c8fbb13ec503f99a91901ab46e0b07ae7941cd527393187039aec586fdfd36f"
+    url "https://files.pythonhosted.org/packages/9f/c7/ee630b29e04a672ecfc9b63227c87fd7a37eb67c1bf30fe95376437f897c/ruamel.yaml-0.18.16.tar.gz"
+    sha256 "a6e587512f3c998b2225d68aa1f35111c29fad14aed561a26e73fab729ec5e5a"
   end
 
   def install
