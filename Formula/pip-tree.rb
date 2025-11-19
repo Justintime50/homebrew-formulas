@@ -7,11 +7,11 @@ class PipTree < Formula
 
   desc "Get the dependency tree of your python virtual environment via pip"
   homepage "https://github.com/Justintime50/pip-tree"
-  url "https://github.com/Justintime50/pip-tree/archive/refs/tags/v4.0.0.tar.gz"
-  sha256 "ebc5e8dd2c9541695443a88c5b74f0f36c4d6fd1ef8d1d40823c600e8c2dded8"
+  url "https://github.com/Justintime50/pip-tree/archive/refs/tags/v5.0.0.tar.gz"
+  sha256 "a722d6f4581156c597b17594a3ef7f79b89ca4e9ef147f65020c74eb261dd207"
   license "MIT"
 
-  depends_on "python@3.13"
+  depends_on "python@3.14"
 
   def install
     virtualenv_install_with_resources
