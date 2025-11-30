@@ -7,11 +7,11 @@ class GithubArchive < Formula
 
   desc "Powerful tool to concurrently clone, pull, or fork user and org repos and gist"
   homepage "https://github.com/Justintime50/github-archive"
-  url "https://github.com/Justintime50/github-archive/archive/refs/tags/v7.0.0.tar.gz"
-  sha256 "ce3058efc10ecb07950027de5ca17edec7868f33a781875e802a135801b01d89"
+  url "https://github.com/Justintime50/github-archive/archive/refs/tags/v7.0.1.tar.gz"
+  sha256 "7acd4e9c2645d43c96ace45787f89a3452bc1db27d8245c22c52918797b44ba6"
   license "MIT"
 
-  depends_on "python@3.14"
+  depends_on "python@3.10"
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/a2/8c/58f469717fa48465e4a50c014a0400602d3c437d7c0c468e17ada824da3a/certifi-2025.11.12.tar.gz"
