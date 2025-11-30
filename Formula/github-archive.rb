@@ -11,8 +11,8 @@ class GithubArchive < Formula
   sha256 "84f6bf9f078ae5ba4e296dd17ceea0fec4bf02a33cceb0c87450df701925a1e4"
   license "MIT"
 
-  depends_on '"python@3.14"'
-  depends_on '"rust" => :build'
+  depends_on "python@3.14"
+  depends_on "rust" => :build
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/a2/8c/58f469717fa48465e4a50c014a0400602d3c437d7c0c468e17ada824da3a/certifi-2025.11.12.tar.gz"
