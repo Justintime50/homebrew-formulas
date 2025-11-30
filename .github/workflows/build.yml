@@ -9,10 +9,10 @@ jobs:
       - uses: actions/checkout@v5
       - uses: Homebrew/actions/setup-homebrew@master
       - run: |
-          brew tap local/formulas $(pwd)
+          brew tap justintime50/formulas $(pwd)
           for formula in Formula/*.rb; do
             name=$(basename "$formula" .rb)
-            brew install "local/formulas/$name"
+            brew install "justintime50/formulas/$name"
           done
   audit:
     runs-on: macos-latest
