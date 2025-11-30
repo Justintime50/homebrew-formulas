@@ -7,11 +7,12 @@ class Pullbug < Formula
 
   desc "Get bugged via discord or slack to merge your github pull requests or close open"
   homepage "https://github.com/Justintime50/pullbug"
-  url "https://github.com/Justintime50/pullbug/archive/refs/tags/v6.0.0.tar.gz"
-  sha256 "2a4bcefc51bc81b0d5a0893bb51f77fecdd6ae3a288ad8c2b5ad000f1853685c"
+  url "https://github.com/Justintime50/pullbug/archive/refs/tags/v6.0.1.tar.gz"
+  sha256 "c319cd5a7423492c3409b81f015aec98f29ec7abf9278e6565ce8b2f1a39be18"
   license "MIT"
 
   depends_on "python@3.14"
+  depends_on "rust" => :build
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/a2/8c/58f469717fa48465e4a50c014a0400602d3c437d7c0c468e17ada824da3a/certifi-2025.11.12.tar.gz"
@@ -64,8 +65,8 @@ class Pullbug < Formula
   end
 
   resource "slack-sdk" do
-    url "https://files.pythonhosted.org/packages/69/90/8c830172b1847bd3084a2cf39aee9d522e2a55d1c3d4e2b066001e9765ee/slack_sdk-3.38.0.tar.gz"
-    sha256 "73f43ef535929c6034982434aba4d5fd04db3b40f4e0cd14c3abfd56419d181d"
+    url "https://files.pythonhosted.org/packages/b6/dd/645f3eb93fce38eadbb649e85684730b1fc3906c2674ca59bddc2ca2bd2e/slack_sdk-3.39.0.tar.gz"
+    sha256 "6a56be10dc155c436ff658c6b776e1c082e29eae6a771fccf8b0a235822bbcb1"
   end
 
   resource "typing-extensions" do
