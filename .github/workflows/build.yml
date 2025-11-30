@@ -10,8 +10,9 @@ jobs:
       - uses: Homebrew/actions/setup-homebrew@master
       - run: |
           brew tap local/formulas $(pwd)
-          for formula in $(brew formula | grep '^local/formulas/'); do
-            brew install "$formula"
+          for formula in Formula/*.rb; do
+            name=$(basename "$formula" .rb)
+            brew install "local/formulas/$name"
           done
   audit:
     runs-on: macos-latest
