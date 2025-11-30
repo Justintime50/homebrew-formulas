@@ -3,22 +3,19 @@ name: build
 on: [push, pull_request]
 
 jobs:
-  tap:
-    runs-on: macos-latest
-    steps:
-      - uses: Homebrew/actions/setup-homebrew@master
-      - run: brew tap justintime50/formulas
   install:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Homebrew/actions/setup-homebrew@master
       - run: |
-          brew tap justintime50/formulas $(pwd)
-          brew install --formula $(pwd)/Formula/*.rb
+          brew tap local/formulas $(pwd)
+          for formula in $(brew formula | grep '^local/formulas/'); do
+            brew install "$formula"
+          done
   audit:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Homebrew/actions/setup-homebrew@master
       - run: brew audit --tap justintime50/formulas
