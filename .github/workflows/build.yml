@@ -8,6 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: Homebrew/actions/setup-homebrew@master
+        # Needed since we untap `justintime50/formulas`, the post job step will fail
+        continue-on-error: true
       - run: |
           brew untap justintime50/formulas || true
           brew tap local/formulas $(pwd)
