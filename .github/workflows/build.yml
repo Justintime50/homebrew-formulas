@@ -3,6 +3,11 @@ name: build
 on: [push, pull_request]
 
 jobs:
+  tap:
+    runs-on: macos-latest
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@master
+      - run: brew tap justintime50/formulas
   install:
     runs-on: macos-latest
     steps:
