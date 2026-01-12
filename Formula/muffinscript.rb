@@ -5,13 +5,13 @@
 class Muffinscript < Formula
   desc "Delectable little programming language"
   homepage "https://github.com/Justintime50/muffinscript"
-  url "https://github.com/Justintime50/muffinscript/releases/download/v0.1.0/v0.1.0.tar.gz"
-  sha256 "fcff78d3ea4bd75df1863ef644bf3b16ec73af12bfc783f96a993dd56d141b97"
+  url "https://github.com/Justintime50/muffinscript/releases/download/v0.2.0/muffinscript.tar.gz"
+  sha256 "aa47dfe98bbdb98d35f1e6a8938d1d828ac6fe937275ed9d68f1e99a0250fede"
   license "MIT"
 
   def install
-  libexec.install "muffin"
-  bin.install_symlink libexec/"muffin/muffin" => "muffin"
+    libexec.install "muffin"
+    bin.install_symlink libexec/"muffin/muffin" => "muffin"
   end
 
   test do
