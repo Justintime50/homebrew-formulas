@@ -11,7 +11,7 @@ class GithubArchive < Formula
   sha256 "38e8344d385a92fdc9f597fc07367f85c008150d036d0cba3e07bf13a196ff3c"
   license "MIT"
 
-  depends_on "python@3.14"
+  depends_on "python@3.12"
   depends_on "rust" => :build
 
   resource "certifi" do
