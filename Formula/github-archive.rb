@@ -7,12 +7,10 @@ class GithubArchive < Formula
 
   desc "Powerful tool to concurrently clone, pull, or fork user and org repos and gist"
   homepage "https://github.com/Justintime50/github-archive"
-  url "https://github.com/Justintime50/github-archive/archive/refs/tags/v7.0.3.tar.gz"
-  sha256 "30c0c93be5187e1853c5c76e42fe1af457af8f7183ff6890bd3de8d5f20ca690"
+  url "https://github.com/Justintime50/github-archive/archive/refs/tags/v7.0.4.tar.gz"
+  sha256 "38e8344d385a92fdc9f597fc07367f85c008150d036d0cba3e07bf13a196ff3c"
   license "MIT"
 
-  depends_on "openssl@3"
-  depends_on "pkgconf"
   depends_on "python@3.14"
   depends_on "rust" => :build
 
@@ -47,8 +45,8 @@ class GithubArchive < Formula
   end
 
   resource "pygithub" do
-    url "https://files.pythonhosted.org/packages/a6/9a/44f918e9be12e49cb8b053f09d5d0733b74df52bf4dabc570da1c3ecd9f6/pygithub-2.9.0.tar.gz"
-    sha256 "a26abda1222febba31238682634cad11d8b966137ed6cc3c5e445b29a11cb0a4"
+    url "https://files.pythonhosted.org/packages/c1/74/e560bdeffea72ecb26cff27f0fad548bbff5ecc51d6a155311ea7f9e4c4c/pygithub-2.8.1.tar.gz"
+    sha256 "341b7c78521cb07324ff670afd1baa2bf5c286f8d9fd302c1798ba594a5400c9"
   end
 
   resource "pyjwt" do
