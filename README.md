@@ -37,6 +37,7 @@ brew search justintime50/formulas
 | [muffinscript](https://github.com/Justintime50/muffinscript)                 | Delectable little programming language                                                      | `brew install muffinscript`         |
 | [onepass](https://github.com/Justintime50/onepass)                           | 1password cli wrapper for easy credential retrieval                                         | `brew install onepass`              |
 | [pip-tree](https://github.com/Justintime50/pip-tree)                         | Get the dependency tree of your python virtual environment via pip                          | `brew install pip-tree`             |
+| [portgrid](https://github.com/Justintime50/portgrid)                         | Agentic harness for claude or copilot to port code from one project to another              | `brew install portgrid`             |
 | [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | Restart Chrome in incognito mode by prompting the user if                                   | `brew install secure-browser-kiosk` |
 | [vcrpy-bincon](https://github.com/Justintime50/vcrpy-bincon)                 | Convert binary python vcr cassette responses to human-readable strings                      | `brew install vcrpy-bincon`         |
 <!-- project_table_end -->
