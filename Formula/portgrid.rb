@@ -5,8 +5,8 @@
 class Portgrid < Formula
   desc "Agentic harness for claude or copilot to port code from one project to another"
   homepage "https://github.com/Justintime50/portgrid"
-  url "https://github.com/Justintime50/portgrid/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "dde3f301ccbde340ec28d4778aca489b57f5ab941119196fe4a89f94d7a3a364"
+  url "https://github.com/Justintime50/portgrid/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "1c4ab45ed079f8d5e2afe85c92d5e0576cb31c1f038870f8196d34c0dc089d56"
   license "MIT"
 
   def install
